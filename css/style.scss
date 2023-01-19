@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+p,
+h4 {
+  /* background: red; */
+  /* height: 100%; */
+  margin: 0;
+}
+
+.wrapper {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  background: #fafafa;
+  margin: 0 auto;
+  max-width: 1440px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  .header {
+    padding: 80px 0px 61px 0px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  .main {
+  }
+
+  .info {
+    height: 358px;
+    padding-top: 47px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    &_faces-left {
+      width: 394px;
+      height: 358px;
+      background-image: url(../img/desktop/image-hero-left.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -32px;
+    }
+
+    &_content {
+    }
+
+    &_title {
+      width: 445px;
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 64px;
+      color: #28283d;
+      margin: 0 auto 34px;
+    }
+
+    &_text {
+      color: #87879d;
+      width: 540px;
+      margin: 0 auto 32px;
+    }
+
+    &_buttons {
+      font-weight: 900;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        border-radius: 29px;
+        display: inline-block;
+        padding-top: 16px;
+      }
+
+      .buttons_download {
+        width: 193px;
+        height: 58px;
+        margin-right: 16px;
+        background: #4d96a9;
+        transition: background 0.5s;
+
+        span {
+          margin-left: 4px;
+          color: #8fe3f9;
+        }
+      }
+
+      .buttons_download:hover {
+        background: #71C0D4;
+      }
+
+      .buttons_add-info {
+        width: 139px;
+        height: 58px;
+        background: #855fb1;
+        transition: background 0.5s;
+      }
+
+      .buttons_add-info:hover {
+        background: #B18BDD;
+      }
+
+    }
+
+    &_faces-right {
+      width: 394px;
+      height: 358px;
+      background-image: url(../img/desktop/image-hero-right.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      right: -32px;
+      background-position: bottom;
+    }
+  }
+
+  .first {
+    height: 222px;
+    position: relative;
+    &_content {
+      position: absolute;
+      width: 56px;
+      height: 140px;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &_line {
+      width: 1px;
+      height: 84px;
+      background-color: rgba(135, 135, 157, 0.25);
+      margin: 0 auto;
+    }
+
+    &_circle {
+      width: 56px;
+      height: 56px;
+      background: #fafafa;
+      border: 1px solid rgba(135, 135, 157, 0.25);
+      border-radius: 29px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+      font-size: 16px;
+      color: #87879d;
+    }
+  }
+  .galery {
+    padding: 92px 0px 80px 0px;
+    &_inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &_item {
+      width: 255px;
+      height: 242px;
+      border-radius: 7px;
+      background-size: cover;
+    }
+
+    &_item:nth-child(1) {
+      background-image: url(../img/desktop/image-woman-in-videocall.jpg);
+    }
+
+    &_item:nth-child(2) {
+      background-image: url(../img/desktop/image-women-videochatting.jpg);
+    }
+
+    &_item:nth-child(3) {
+      background-image: url(../img/desktop/image-men-in-meeting.jpg);
+    }
+
+    &_item:nth-child(4) {
+      background-image: url(../img/desktop/image-man-texting.jpg);
+    }
+  }
+
+  .first.second {
+    height: 184px;
+  }
+
+  .content {
+    text-align: center;
+    &_subtitle {
+      font-weight: 900;
+      font-size: 16px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #4d96a9;
+      margin-bottom: 16px;
+    }
+
+    &_title {
+      width: 445px;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 44px;
+      color: #28283d;
+      margin: 0 auto 32px;
+    }
+
+    &_text {
+      width: 540px;
+      color: #87879d;
+      margin: 0 auto;
+    }
+  }
+  .footer {
+    height: 308px;
+    background-image: url(../img/desktop/image-footer.jpg);
+    &_bg {
+      height: 308px;
+      background-color: rgba(77, 150, 169, 0.85);
+      padding-top: 116px;
+      padding-bottom: 104px;
+    }
+
+    &_inner {
+      display: flex;
+    }
+
+    &_title {
+      width: 350px;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 44px;
+      margin-right: 125px;
+      color: #fafafa;
+    }
+
+    &_text {
+      width: 350px;
+      color: #fafafa;
+      margin-right: 92px;
+    }
+
+    .buttons {
+    &_download {
+      width: 193px;
+      height: 58px;
+      margin-right: 16px;
+      color: #fff;
+      background: #855FB1;
+      border-radius: 29px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: background 0.5s;
+
+      span {
+        margin-left: 4px;
+        color: #D9B8FF;
+      }
+    }
+
+    &_download:hover {
+      background: #B18BDD;
+    }
+
+  }
+  }
+}
